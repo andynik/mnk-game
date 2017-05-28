@@ -176,7 +176,7 @@ def mm_bot(position, player):
 
 ''' ALPHA BETA PRUNING '''
 
-def alphabeta(position, lastmove, player, alpha, beta):         # alpha = 'X', beta = 'O'
+def alphabeta(position, lastmove, player, alpha, beta):         # alpha = get_player(), beta = enemy
     if position.is_gameover(lastmove, get_enemy(player)):
         # return position.winner * (-1)
         cur_player = get_player()

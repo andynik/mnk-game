@@ -8,4 +8,5 @@ Algorithms which I used:
 
 Check out my coursework [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing) (in ukrainian).
 
-<a name="myfootnote1">1</a>: Footnote content goes here n,n,k-game actually :).
+
+<a name="myfootnote1">1</a>: n,n,k-game actually :).

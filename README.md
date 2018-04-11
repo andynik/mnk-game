@@ -1,9 +1,9 @@
-These files are about creating AI which can play in Tic-Tac-Toe (or bigger configuration) through some well-known algorithms.
-That is what my course work was about.
+These files are about creating AI which can play in m,n,k-game through some well-known algorithms.
+That is what my coursework was about.
 
-Algorithms that I used:
+Algorithms which I used:
   1. Minimax
-  2. Alpha-beta pruning
-  3. Monte Carlo tree search
+  2. Alpha-beta Pruning
+  3. Monte Carlo Tree Search
 
-Also I had tried to create neural network which can be trained through the game process but learning takes lots of time for achieve any nice results.
+You can find more about it over (here)[https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing].

@@ -1,4 +1,4 @@
-These files are about creating AI which can play in [m,n,k-game][1] through some well-known algorithms.
+These files are about creating AI which can play in m,n,k-game<sup>[1](#myfootnote1)</sup> through some well-known algorithms.
 That is what my coursework was about.
 
 Algorithms which I used:
@@ -8,4 +8,4 @@ Algorithms which I used:
 
 Check out my coursework [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing) (in ukrainian).
 
-[1]: n,n,k-game actually :).
+<a name="myfootnote1">1</a>: Footnote content goes here n,n,k-game actually :).

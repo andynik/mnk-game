@@ -1,6 +1,6 @@
 ### What's this stuff?
 
-These files are about creating AI which can play in m,n,k-game<sup>[1](#myfootnote1)</sup> through some well-known algorithms and comparing them.
+These files are about creating AI which can play in m,n,k-game<sup>[[1]](#myfootnote1)</sup> through some well-known algorithms and comparing them.
 That is what my coursework was about.
 
 Implemented algorithms:
@@ -11,4 +11,4 @@ Implemented algorithms:
 Check out my coursework [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing) (in ukrainian).
 
 ---
-<a name="myfootnote1">1</a>: n,n,k-game actually :).
+<a name="myfootnote1">1</a>. n,n,k-game actually :).

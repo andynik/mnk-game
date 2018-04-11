@@ -6,4 +6,4 @@ Algorithms which I used:
   2. Alpha-beta Pruning
   3. Monte Carlo Tree Search
 
-You can find more about it over (here)[https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing].
+You can find more about it [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing).

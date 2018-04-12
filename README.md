@@ -1,4 +1,4 @@
-### What's this stuff?
+### What's all this stuff?
 
 These files are about creating AI which can play in m,n,k-game<sup>[[1]](#myfootnote1)</sup> through some well-known algorithms and comparing them.
 That is what my coursework was about.

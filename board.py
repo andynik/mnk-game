@@ -1,7 +1,9 @@
 from termcolor import colored
 
 
-C = 3
+N = 5   # NxN - board dimensions
+K = 4   # (<= N) number of stones in a row
+        # (horizontally, vertically, or diagonally)
 
 
 class Board():
@@ -43,27 +45,27 @@ class Board():
         self.board[pos // self.size][pos % self.size] = piece
 
     def is_win(self, move, piece):
-        global C
+        global K
 
         flag = False
         r, s = move // self.size, move % self.size
         matrix = self.board
 
-        h = matrix[r][max(s - (C-1), 0):s] + [matrix[r][s]] + matrix[r][s + 1:min(s + (C-1), self.size - 1) + 1]
-        v = [matrix[a][s] for a in range(max(r - (C-1), 0), r)] + [matrix[r][s]] +\
-            [matrix[a][s] for a in range(r + 1, min(r + (C-1), self.size - 1) + 1)]
-        d1 = [matrix[r - a][s - a] for a in range(min(r, s, (C-1)) + 1 -1, 1-1, -1)] +\
-             [matrix[r][s]] + [matrix[r + a][s + a] for a in range(1, min(self.size - r - 1, self.size - s - 1, (C-1)) + 1)]
-        d2 = [matrix[r - a][s + a] for a in range(min(r, self.size - s - 1, (C-1)) + 1 -1, 1-1, -1)] +\
-             [matrix[r][s]] + [matrix[r + a][s - a] for a in range(1, min(self.size - r - 1, s, (C-1)) + 1)]
-        lines = [h, v, d1, d2]                              # all possible loss-positions
+        h = matrix[r][max(s - (K-1), 0):s] + [matrix[r][s]] + matrix[r][s + 1:min(s + (K-1), self.size - 1) + 1]
+        v = [matrix[a][s] for a in range(max(r - (K-1), 0), r)] + [matrix[r][s]] +\
+            [matrix[a][s] for a in range(r + 1, min(r + (K-1), self.size - 1) + 1)]
+        d1 = [matrix[r - a][s - a] for a in range(min(r, s, (K-1)) + 1 -1, 1-1, -1)] +\
+             [matrix[r][s]] + [matrix[r + a][s + a] for a in range(1, min(self.size - r - 1, self.size - s - 1, (K-1)) + 1)]
+        d2 = [matrix[r - a][s + a] for a in range(min(r, self.size - s - 1, (K-1)) + 1 -1, 1-1, -1)] +\
+             [matrix[r][s]] + [matrix[r + a][s - a] for a in range(1, min(self.size - r - 1, s, (K-1)) + 1)]
+        lines = [h, v, d1, d2]              # all possible loss-positions
         # print('lines:', lines)
 
         player = ['.', 'X', 'O']            # converting -1, 1, 0 to O, X, .
         if piece == 1 or piece == -1:
-            five_pieces = player[piece] * C
+            five_pieces = player[piece] * K
         else:
-            five_pieces = '#' * C
+            five_pieces = '#' * K
 
         for line in lines:
             s = ''

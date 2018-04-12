@@ -2,9 +2,6 @@ from board import *
 import xo_bot as xob
 
 
-N = 3
-
-
 def new_game(par, bot1, bot2):
     b = Board(N)
     # b.make_move(0, 1)
@@ -34,7 +31,6 @@ def new_game(par, bot1, bot2):
             movepiece = -1
 
         if movepiece == -1 and playerO == 'bot':
-            # ans = str(input("It's my turn! Which bot do u prefer? [mm/ab/mc] "))
             move = xob.bot_move(b, movepiece, bot2)
             print(move)
         elif movepiece == 1 and playerX == 'bot':
@@ -92,7 +88,6 @@ def main():
                         elif res == -1:
                             res_of_fights[bot1] += 1
                 print_res_of_bot_fights(res_of_fights, ans)
-
         else:
             print("Allright then. Play with yourself")
             new_game('PvsP', None, None)

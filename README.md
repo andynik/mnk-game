@@ -8,7 +8,7 @@ Implemented algorithms:
   2. Alpha-beta Pruning
   3. Monte Carlo Tree Search
 
-Check out my coursework [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing) (in ukrainian).
+Check out my coursework [over here](https://drive.google.com/file/d/15Dw7pGW65kCsx2PLeBYJFD32ydLwx6zo/view?usp=sharing)<sup>ua</sup>.
 
 ---
 <a name="myfootnote1"><sup>1</sup></a> n,n,k-game actually :).
